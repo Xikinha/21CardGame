@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+#heading {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#btnInfo {
+    position: fixed;
+    top: 0.5rem;
+    right: 13%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#btnInfo:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.pop-up {
+    font-family: "Arial", sans-serif;
+    position: fixed;
+    z-index: 99;
+    top: 2rem;
+    right: 10%;
+    width: 25rem;
+    height: 11rem;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    line-height: 150%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    height: 2rem;
+    width: 8rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+.btn:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006400;
+    width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+}
+.deck {
+    height: 8rem;
+    width: 5.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    background-color: black;
+    color: white;
+}
+#deckCount {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 3.4rem 0;
+}
+
+#player, #computer {
+    width: 39rem;
+    border: 1px solid #006400;
+    border-radius: 0.5rem;
+    color: white;
+    margin: auto;
+    font-weight: bold;
+}
+#player-text, #computer-text {
+    display: flex;
+}
+.player {
+    margin: 1rem;
+    margin-left: 1rem;
+}
+#player-points, #computer-points {
+    margin-top: 1rem;
+    margin-left: auto;
+}
+#playerCards, #computerCards {
+    display: flex;
+}
+.card {
+    height: 8rem;
+    width: 5.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin-left: 0.8rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    background-color: #006400;
+}
+.card p {
+    font-size: 0.6rem;
+    margin-top: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.red {
+    color: red;
+}
+.black {
+    color: black;
+}
+.frontside {
+    background-color: white;
+}
+.backside {
+    background-color: black;
+}
+#message {
+    height: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.7rem;
+}
+.win {
+    color: green;
+}
+.loss {
+    color: red;
+}
+.tie {
+    color: orangered;
+}

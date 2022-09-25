@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 card game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1 id="heading">21 Card game</h1>
+
+        <button id="btnInfo">i</button>
+        <div class="pop-up">
+            <h3>Welcome!</h3>
+            <p>Click the START button to start the game.</p>
+            <p>After starting the game the buttons HIT and STAND will appear.</p>
+            <p>Click the HIT button to take another card, and the STAND button to finish your game.</p>
+        </div>
+
+        <div id="buttons">
+            <button id="btnStart" name="startGame" class="btn">Start</button>
+            <button id="btnHit" name="Hit" class="btn">Hit</button>
+            <button id="btnStand" name="Stand" class="btn">Stand</button>
+            <button id="btnNew" name="New" class="btn">New game</button>
+        </div>
+        <div id="table">
+            <div id="deck" class="deck">
+                <p id="deckCount">52</p>
+            </div>
+            <div id="players">
+                <div id="player">
+                    <div id="player-text">
+                        <p class="player">You</p>
+                        <p id="player-points">0</p>
+                    </div>
+                    <div id="playerCards">
+                        <div id="pCard1" class="card">
+                            <p id="pSuit1"></p>
+                            <p id="pValue1"></p>
+                        </div>
+                        <div id="pCard2" class="card">
+                            <p id="pSuit2"></p>
+                            <p id="pValue2"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="computer">
+                    <div id="computer-text">
+                        <p class="player">Dealer</p>
+                        <p id="computer-points">0</p>
+                    </div>
+                    <div id="computerCards">
+                        <div id="cCard1" class="card">
+                            <p id="cSuit1"></p>
+                            <p id="cValue1"></p>
+                        </div>
+                        <div id="cCard2" class="card">
+                            <p id="cSuit2"></p>
+                            <p id="cValue2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="message"></p>
+    </main>
+</body>
+</html>
